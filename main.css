@@ -3,15 +3,16 @@ font-family: 'Lato', sans-serif;
 text-align: center;
 }
 
-#footer {
-    margin-top: 79%;
-    margin-left: 50%;
-    margin-right: 50%;
+.footer {
+display: inline-block;
+margin-left: 50%;
 }
 
-.pagelinks {
-    font-family: Lato;
-    text-decoration: none;
-    color: #282828;
-    display: inline-block;
+.footericon {
+max-width: 50px;
+max-height: auto;
+}
+
+a {
+text-decoration: none;
 }
