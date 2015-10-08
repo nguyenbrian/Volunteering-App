@@ -2,3 +2,16 @@ h1 {
 font-family: 'Lato', sans-serif;
 text-align: center;
 }
+
+#footer {
+    margin-top: 79%;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.pagelinks {
+    font-family: Lato;
+    text-decoration: none;
+    color: #282828;
+    display: inline-block;
+}
