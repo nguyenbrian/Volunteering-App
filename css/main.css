@@ -1,0 +1,25 @@
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+    width: 270px;
+}
+
+.footericon {
+    width: 50px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+<!-- I am Brain and I am faggot -->
