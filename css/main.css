@@ -1,24 +1,42 @@
 
+header {
+    position: relative;
+    background-color:#00CC66;
+    height: auto;
+    left: 0;
+    right: 0;
+    overflow:auto; 
+
+}
+
 h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
-}
-
-.footer {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80%;
-    width: 270px;
-}
-
-.footericon {
-    width: 50px;
-    height: auto;
+    color: white;
 }
 
 a {
     text-decoration: none;
+}
+
+.footer {
+    display: block;
+    
+    position: fixed;
+    bottom: 0%;
+    margin: 0% auto;
+    left: 0;
+    right: 0;
+    background-color:#00CC66;
+ 
+}
+
+#buttoncontainer {
+    width: 266px;
+    margin: 0% auto;
+}
+.footericon {
+    width: 50px;
+    height: auto;
 }
 
