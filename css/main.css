@@ -14,7 +14,6 @@ h1 {
     text-align: center;
     color: white;
     margin-top: 0%;
-    margin-bottom 0%;
 }
 
 a {
@@ -35,6 +34,7 @@ a {
 #buttoncontainer {
     width: 320px;
     margin: 0% auto;
+    padding: 10px 0px 10px 0px;
 }
 .footericon {
     width: 50px;
