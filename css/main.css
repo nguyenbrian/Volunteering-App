@@ -13,6 +13,8 @@ h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: white;
+    margin-top: 0%;
+    margin-bottom 0%;
 }
 
 a {
@@ -21,7 +23,6 @@ a {
 
 .footer {
     display: block;
-    
     position: fixed;
     bottom: 0%;
     margin: 0% auto;
@@ -32,11 +33,12 @@ a {
 }
 
 #buttoncontainer {
-    width: 266px;
+    width: 320px;
     margin: 0% auto;
 }
 .footericon {
     width: 50px;
     height: auto;
+    margin-left: 10px;
 }
 
