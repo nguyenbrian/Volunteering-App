@@ -37,7 +37,7 @@ a {
 }
 
 #buttoncontainer {
-    width: 320px;
+    width: 311px;
     margin: 0% auto;
     padding: 10px 0px 10px 0px;
     text-align:center;
@@ -47,7 +47,8 @@ a {
     display: inline-block;
     width: 50px;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .icon_text {
@@ -62,7 +63,5 @@ a {
 .footericon {
     width: 50px;
     height: auto;
-
-    
 }
 
