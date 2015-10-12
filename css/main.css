@@ -1,3 +1,6 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
 
 header {
     position: relative;
@@ -10,7 +13,6 @@ header {
 }
 
 h1 {
-    font-family: 'Lato', sans-serif;
     text-align: center;
     color: white;
     margin-top: 0%;
@@ -20,7 +22,10 @@ a {
     text-decoration: none;
 }
 
-.footer {
+
+    
+
+#footer {
     display: block;
     position: fixed;
     bottom: 0%;
@@ -35,10 +40,29 @@ a {
     width: 320px;
     margin: 0% auto;
     padding: 10px 0px 10px 0px;
+    text-align:center;
+    
 }
+.texticoncontainer { 
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.icon_text {
+    color: white;
+    width: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+    line-height: 12px;
+}
+
 .footericon {
     width: 50px;
     height: auto;
-    margin-left: 10px;
+
+    
 }
 
