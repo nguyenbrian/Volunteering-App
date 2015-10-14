@@ -29,7 +29,6 @@ a {
     display: block;
     position: fixed;
     bottom: 0%;
-    margin: 0% auto;
     left: 0;
     right: 0;
     background-color:#00CC66;
@@ -64,4 +63,26 @@ a {
     width: 50px;
     height: auto;
 }
+#title {
+    vertical-align: middle;
+    margin-top: 35%;
+    font-size: 3em;
+}
 
+#loginbox {
+    background-color: white;
+    width: 350px;
+    height: 130px;
+    margin: 0% auto;
+    margin-top: 5%;
+}
+
+#usernamebox {
+    height: 65px;
+    border: 1px solid black;
+}
+
+#passwordbox {
+    height: 65px;
+    border: 1px solid black;
+}
