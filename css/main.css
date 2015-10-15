@@ -29,7 +29,6 @@ a {
     display: block;
     position: fixed;
     bottom: 0%;
-    margin: 0% auto;
     left: 0;
     right: 0;
     background-color:#00CC66;
@@ -64,4 +63,3 @@ a {
     width: 50px;
     height: auto;
 }
-

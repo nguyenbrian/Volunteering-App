@@ -1,50 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html> 
+    <header>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"  href="css/bootstrap.css">
         <link rel="stylesheet"  href="js/bootstrap.js">
-        <link rel="stylesheet"  href="css/main.css">
+        <link rel="stylesheet"  href="css/login.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-        <title>Volunteering App</title>
-    </head>
-    <body>
-        <header>
-            <h1>Home</h1>
-        </header>
-        <div id="footer">
-            <div id="buttoncontainer">
-                <div class="texticoncontainer">
-                    <a class="pagelinks" href="index.html">
-                        <img class="footericon" src="images/home.png">
-                        <p class="icon_text">Home</p>
-                    </a>
-                </div>
-                <div class="texticoncontainer">
-                    <a class="pagelinks" href="html/discovery.html">
-                        <img class="footericon" src="images/discover.png">
-                        <p class="icon_text">Discover</p>
-                </a>
-                </div>
-                <div class="texticoncontainer">
-                    <a class="pagelinks" href="html/admin.html">
-                        <img class="footericon" src="images/switchaccounts.png">
-                        <p class="icon_text">Admin Login</p>
-                </a>
-                </div>
-                <div class="texticoncontainer">
-                    <a class="pagelinks" href="html/stats.html">
-                        <img class="footericon" src="images/stats.png">
-                        <p class="icon_text">Stats</p>
-                </a>
-                </div>
-                <div class="texticoncontainer">
-                    <a class="pagelinks" href="html/settings.html">
-                        <img class="footericon" src="images/settings.png">
-                        <p class="icon_text">Settings</p>
-                </a>
-                </div>
+    </header>
+    <body style=background-color:#00CC66;>
+        <script src="js/login.js"></script>
+        <div id="entireloginwrapper">
+            <h1 id="title">Sign in</h1> 
+            <form id="userpass"></form>
+            <div id="loginbox">
+                <input id="username" placeholder="username" type="text" name="username" form="userpass" autofocus/>
+                <input id="password" placeholder="password" type="text" name="password" form="userpass"/>
             </div>
-        </div>
+            <input id="submitbutton" type="button" onclick="submitUserpass()" value="submit" form="userpass">
+        </div> 
     </body>
+
 </html>
