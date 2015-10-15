@@ -9,6 +9,5 @@ function submitUserpass() {
     }
     
     else {
-    document.location.href = "index.html";
     }
 };
