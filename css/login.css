@@ -28,7 +28,7 @@ button:focus {
 }
 
 input {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #username {
@@ -36,6 +36,7 @@ input {
     border-bottom: 2px solid grey;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
     padding-left: 8px;
     width: 295px;
     height: 65px;
