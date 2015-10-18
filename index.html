@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html> 
-    <header>
+    <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet"  href="css/bootstrap.css">
-        <link rel="stylesheet"  href="js/bootstrap.js">
-        <link rel="stylesheet"  href="css/login.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    </header>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="css/login.css">
+        <link rel="stylesheet"  href="css/animate.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
     <body style=background-color:#00CC66;>
         <script src="js/login.js"></script>
         <div id="entireloginwrapper">
-            <h1 id="title">Sign in</h1> 
+            <h1 id="title" class="animated fadeInUp">Sign in</h1> 
             <form id="userpass"></form>
-            <div id="loginbox">
+            <div id="loginbox" class="animated fadeInUp">
                 <input id="username" placeholder="username" type="text" name="username" form="userpass" autofocus/>
                 <input id="password" placeholder="password" type="text" name="password" form="userpass"/>
+                <input id="submitbutton" type="button" onclick="submitUserpass()" value="submit" form="userpass" class="animated fadeInUp">
             </div>
-            <input id="submitbutton" type="button" onclick="submitUserpass()" value="submit" form="userpass">
+            
         </div> 
     </body>
 </html>
