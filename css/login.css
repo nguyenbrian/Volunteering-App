@@ -7,6 +7,8 @@ h1 {
     color: white;
 }
 
+    
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -55,23 +57,21 @@ input {
 
 
 #submitbutton {
-    width: 150px;
+    width: 250px;
     height: 65px;
     display: block;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 30px;
     border: none;
     border-radius: 8px;
     color: white;
     background-color: orange;
     font-weight: bold;
-    font-size: 1.5em;
-    
-    
+    font-size: 2em;
 }
 
 #entireloginwrapper {
-     height: 50%;
+     height: 350px;
      position: absolute;
      top: 0; left: 0; bottom: 0; right: 0;
      margin: auto;
