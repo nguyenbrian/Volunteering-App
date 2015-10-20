@@ -68,6 +68,7 @@ input {
     background-color: orange;
     font-weight: bold;
     font-size: 2em;
+    -webkit-animation-delay: 0.5s;
 }
 
 #entireloginwrapper {
@@ -75,4 +76,9 @@ input {
      position: absolute;
      top: 0; left: 0; bottom: 0; right: 0;
      margin: auto;
+}
+
+#hiddentext {
+    color: white;
+    
 }
