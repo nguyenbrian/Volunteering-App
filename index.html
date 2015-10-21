@@ -10,7 +10,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
     <body style=background-color:#00CC66;>
-        <h4 hidden id="hiddentext"></h4>
+        <h4 id="hiddentext" hidden>placeholder </h4>
         <div id="entireloginwrapper">
             <h1 id="title" class="animated fadeInUp">Sign in</h1> 
             <form id="userpass"></form>
@@ -18,7 +18,7 @@
                 <input id="username" placeholder="username" type="text" name="username" form="userpass" autofocus/>
                 <input id="password" placeholder="password" type="password" name="password" form="userpass"/>
             </div>
-                <input id="submitbutton" type="button" onclick="submitUserpass()" value="continue" form="userpass" class="animated fadeInUp">
+                <input id="submitbutton" type="submit" onclick="submitUserpass()" value="continue" form="userpass" class="animated fadeInUp">
             <script src="js/login.js"></script>
         </div> 
     </body>
