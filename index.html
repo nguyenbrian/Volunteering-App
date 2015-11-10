@@ -4,10 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet"  href="css/login.css">
-        <link rel="stylesheet"  href="css/animate.css">
+        <link rel="stylesheet" href="css/animate.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/login.css">
     </head>
     <body style=background-color:#00CC66;>
         <h4 id="hiddentext" hidden>placeholder </h4>
@@ -17,10 +17,18 @@
             <div id="loginbox" class="animated fadeInUp">
                 <input id="username" placeholder="username" type="text" name="username" form="userpass" autofocus/>
                 <input id="password" placeholder="password" type="password" name="password" form="userpass"/>
-                
+            </div>
+            <div id="registerform" hidden>
+                <input class="signupbox" id="name"  placeholder="full name" type="text" name="fullname" form="" autofocus/>
+                <input class="signupbox" id="usernamereg"    placeholder="username" type="text" name="id" form=""/>
+                <input class="signupbox" id="email" placeholder="email address" type="text" name="email" form=""/>
+                <input class="signupbox" id="phone" placeholder="phone number" type="text" name="phone" form=""/>
             </div>
                 <input id="submitbutton" type="submit" onclick="submitUserpass()" value="continue" form="userpass" class="animated fadeInUp">
             <script src="js/login.js"></script>
-        </div>  
+        </div> 
+        <div id="footer">
+            <input id="registertrigger" type=submit onclick="displayregister()" value="Don't have an account?" class="animated fadeInUp">
+        </div>
     </body>
 </html>

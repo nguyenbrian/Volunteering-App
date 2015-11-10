@@ -90,3 +90,47 @@ input {
     margin: auto;
    
 }
+
+#footer {
+    width: 100%;
+    display: block;
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    
+}
+
+#registerform {
+    background-color: white;
+    width: 300px;
+    height: 260px;
+    margin: 0% auto;
+    border-radius: 10px;
+    
+}
+
+.signupbox {
+    border: none;
+    border-bottom: 2px solid grey;
+    padding-left: 8px;
+    width: 295px;
+    height: 65px;
+    margin-left: 5px;
+}
+
+#phone {
+    border: none;
+}
+
+#name {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+#registertrigger {
+    border: none;
+    color: white;
+    background: none;
+    text-align: center;
+    
+}
