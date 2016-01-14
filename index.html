@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html> 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,17 +12,20 @@
     <body style=background-color:#00CC66;>
         <h4 id="hiddentext" hidden>placeholder </h4>
         <div id="entireloginwrapper">
-            <h1 id="title" class="animated fadeInUp">Sign in</h1> 
+            <div id="titlewrapper">
+                <h1 id="title" class="animated fadeInUp">Sign in</h1> 
+            </div>
             <form id="userpass"></form>
             <div id="loginbox" class="animated fadeInUp">
                 <input id="username" placeholder="username" type="text" name="username" form="userpass" autofocus/>
                 <input id="password" placeholder="password" type="password" name="password" form="userpass"/>
             </div>
-            <div id="registerform" hidden>
-                <input class="signupbox" id="name"  placeholder="full name" type="text" name="fullname" form="" autofocus/>
-                <input class="signupbox" id="usernamereg"    placeholder="username" type="text" name="id" form=""/>
-                <input class="signupbox" id="email" placeholder="email address" type="text" name="email" form=""/>
-                <input class="signupbox" id="phone" placeholder="phone number" type="text" name="phone" form=""/>
+            <div id="registerwrapper" class="animated fadeIn" hidden>
+                <form id="registerform" ></form>
+                <input class="signupbox" id="name"  placeholder="full name" type="text" name="fullname" form="registerform" autofocus/>
+                <input class="signupbox" id="email" placeholder="email address" type="text" name="email" form="registerform"/>
+                <input class="signupbox" id="usernamereg"    placeholder="username" type="text" name="id" form="registerform"/>
+                <input class="signupbox" id="regpassword" placeholder="password" type="password" name="pass" form="registerform"/>
             </div>
                 <input id="submitbutton" type="submit" onclick="submitUserpass()" value="continue" form="userpass" class="animated fadeInUp">
             <script src="js/login.js"></script>

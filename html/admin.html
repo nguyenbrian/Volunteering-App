@@ -9,14 +9,29 @@
         <link rel="stylesheet"  href="../css/animate.css">
         <title>Volunteering App</title>
     </head>
-    <body>
+    <body id="adminbody">
         <header class="animated fadeInDown"> 
             <h1>Admin Control Panel</h1>
         </header>
-        <div id="footer" class="animated fadeIn">
+         <div id="mainwrapper">
+            <div id="creationblock">
+                <h1 class="whitetext">Create a volunteering opportunitity</h1>
+                <h3 class="whitetext">Select a Catagory</h3>
+                <select id="createcatagory">
+                <option>General</option>
+                 <option>Education</option>
+                 <option>Entertainment</option>
+                 <option>Landscaping</option>
+                 <option>Recreational</option>
+                 <option>All</option>
+                </select>
+            </div>
+            
+        </div>
+        <footer class="animated fadeIn">
             <div id="buttoncontainer">
                 <div class="texticoncontainer">
-                    <a class="pagelinks" href="home.html">
+                <a class="pagelinks" href="home.html">
                         <img class="footericon" src="../images/home.png">
                         <p class="icon_text">Home</p>
                     </a>
@@ -46,6 +61,6 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </footer>
     </body>
 </html>

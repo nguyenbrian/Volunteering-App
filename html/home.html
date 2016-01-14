@@ -4,16 +4,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="../js/tabletop.js"></script>
         <link rel="stylesheet"  href="../css/main.css">
         <link rel="stylesheet"  href="../css/animate.css">
         <title>Volunteering App</title>
     </head>
     <body>
         <header class="animated fadeInDown">
-            <h1>Home</h1>
+            <h1 id="title">Home</h1>
+            <select id="catagorySelector" onchange="displayOpportunities()">
+                 <option>General</option>
+                 <option>Education</option>
+                 <option>Entertainment</option>
+                 <option>Landscaping</option>
+                 <option>Recreational</option>
+                 <option>All</option>
+            </select>
         </header>
-        <div id="footer" class="animated fadeIn">
+        <div id="mainwrapper" class="container-fluid">
+            <div class="opportunityblock">
+                <h4 id="name1"></h4>
+                <p class="desc" id="desc1"></p>
+            </div>
+            <div class="opportunityblock" >
+                <h4 id="name2"></h4>
+                <p class="desc" id="desc2"></p>
+            </div>
+            <div class="opportunityblock" >
+                <h4 id="name3"></h4>
+                <p class="desc" id="desc3"></p>
+            </div>
+            <div class="opportunityblock" >
+                <h4 id="name4"></h4>
+                <p class="desc" id="desc4"></p>
+            </div>
+        </div>
+        <footer class="animated fadeIn">
             <div id="buttoncontainer">
                 <div class="texticoncontainer">
                 <a class="pagelinks" href="home.html">
@@ -46,6 +74,25 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </footer>
+        <script>
+        function loadParsedLogin() {
+            var parsedLoginInfo = JSON.parse(localStorage.getItem("loginInfo"));
+        // parses the string that is stored in localStorage back into Javascript
+            $("#title").html("Welcome " + parsedLoginInfo.fullname +  "!");
+        // Sets the inner html of #title to Welcome [stored fullname]!
+            setTimeout(function() {
+                $("#title").attr("class","animated fadeOutRight")
+            }, 2500)
+            setTimeout(function(){
+                $('#title').one('webkitAnimationEnd', $("#title").attr("class","animated fadeInLeft"))
+                $("#title").html("Home");
+            }, 3000)
+        // Transition animations
+        }
+        document.onload = loadParsedLogin();
+        // Once the webpage loads, run the function loadParsedLogin()
+        </script>
+        <script src="../js/main.js"></script>
     </body>
 </html>
