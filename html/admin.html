@@ -3,30 +3,73 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet"  href="../css/animate.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD4wf3YVR0gwbVlpzRQp1VLpXIgvjgApI&libraries=places"></script>
         <title>Volunteering App</title>
     </head>
     <body id="adminbody">
         <header class="animated fadeInDown"> 
             <h1>Admin Control Panel</h1>
         </header>
-         <div id="mainwrapper">
-            <div id="creationblock">
+         <div id="adminpagewrapper">
+            <div id="creationblock" class="animated FadeInDown">
                 <h1 class="whitetext">Create a volunteering opportunitity</h1>
-                <h3 class="whitetext">Select a Catagory</h3>
-                <select id="createcatagory">
-                <option>General</option>
-                 <option>Education</option>
-                 <option>Entertainment</option>
-                 <option>Landscaping</option>
-                 <option>Recreational</option>
-                 <option>All</option>
-                </select>
+                <h3 style="color: black">1. Name your opportunitity</h3>
+                <input type="text" id="name" placeholder="Name">
+                <div>
+                    <h3 class="whitetext">2. Select or create a catagory</h3>
+                    <select id="selectcatagory">
+                    <option>General</option>
+                     <option>Education</option>
+                     <option>Entertainment</option>
+                     <option>Landscaping</option>
+                     <option>Recreational</option>
+                     <option>All</option>
+                     <option>Other (custom functionality coming soon!)</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 class="whitetext">3. Select an intended gender</h3>
+                    <select id="selectgender">
+                         <option>Both</option>
+                         <option>Male</option>
+                         <option>Female</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 class="whitetext">4. Add a brief description</h3>
+                    <input type="text" id="desc" placeholder="Enter a description">
+                </div>
+                <div>
+                    <h3 class="whitetext">5. Add an intended location</h3>
+                    <input type="text" id="location" placeholder="Enter an address">
+                </div>
+                <div>
+                    <h3 class="whitetext">6. Enter the organization you're representing</h3>
+                    <input type="text" id="company" placeholder="Enter an organization">
+                </div>
+                <div>
+                    <h3 class="whitetext">7. Choose the approximate hours </h3>
+                    <select id="numHours">
+                         <option>1 hour</option>
+                         <option>2 hours</option>
+                         <option>3 hours</option>
+                         <option>4 hours</option>
+                         <option>5 hours</option>
+                         <option>6 hours</option>
+                         <option>7 hours</option>
+                         <option>8 hours</option>
+                         <option>9 hours</option>
+                         <option>10+ hours</option>
+                    </select>
+                </div>
+                <input style="color: black" type="submit" id="submitbutton" placeholder="Create" onclick="createOpp()">
+                <script src="../js/create.js"></script>
             </div>
-            
         </div>
         <footer class="animated fadeIn">
             <div id="buttoncontainer">

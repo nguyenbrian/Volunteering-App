@@ -14,16 +14,18 @@
     <body>
         <header class="animated fadeInDown">
             <h1 id="title">Home</h1>
-            <select id="catagorySelector" onchange="displayOpportunities()">
-                 <option>General</option>
-                 <option>Education</option>
-                 <option>Entertainment</option>
-                 <option>Landscaping</option>
-                 <option>Recreational</option>
-                 <option>All</option>
-            </select>
+            <div id="selectiondiv">
+                <select id="catagorySelector" onchange="displayOpportunities()">
+                     <option>General</option>
+                     <option>Education</option>
+                     <option>Entertainment</option>
+                     <option>Landscaping</option>
+                     <option>Recreational</option>
+                     <option>All</option>
+                </select>
+            </div>
         </header>
-        <div id="mainwrapper" class="container-fluid">
+        <div id="mainwrapper" class="container-fluid" class="animated fadeInUp">
             <div class="opportunityblock">
                 <h4 id="name1"></h4>
                 <p class="desc" id="desc1"></p>

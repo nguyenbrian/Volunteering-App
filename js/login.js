@@ -57,7 +57,7 @@ function displayregister() {
     $("#title").html("Register");
     $("#registerwrapper").addClass("animated FadeIn");
     $("#registerwrapper").animate( {
-            'height': 260
+            'height': 295
     }, 750)
     $("entireloginwrapper").css("height", "");
     $("#loginbox").attr("class", "animated fadeOut");
@@ -74,7 +74,8 @@ function register() {
         fullname: $("#name").val(),
         username: $("#usernamereg").val(),
         email: $("#email").val(),
-        password: $("#regpassword").val()
+        password: $("#regpassword").val(),
+        gender: $("#gender").val()
 // Creates a object named "loginInfo" and stores data from the register form into it
     };
     localStorage.loginInfo = JSON.stringify(loginInfo);
